@@ -1,0 +1,86 @@
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  font-family: 'Cairo', sans-serif
+
+$primary_color: #cf2626
+$secondary_color: #e5e5e5
+
+body
+  background: url('../img/pattern1.png')
+
+/*page title*/
+.title
+  text-align: center
+  margin-top: 30px
+  position: relative
+  overflow-y: hidden
+  padding: 5px 0
+
+  .full-word
+    position: relative
+
+    &:hover .first:before
+      top: -100%
+
+    &:hover .first
+      color: $primary_color
+
+    &:hover .second:before
+      top: 100%
+
+    &:hover .second
+      color: $secondary_color
+
+    .first
+      position: relative
+      transition: 0.3s ease-in-out all
+
+      &:before
+        position: absolute
+        content: ""
+        top: 100%
+        left: 0
+        height: 100%
+        width: 100%
+        background: $primary_color
+        transition: 0.3s ease-in-out all
+
+    .second
+      position: relative
+      transition: 0.3s ease-in-out all
+
+      &:before
+        position: absolute
+        content: ""
+        top: -100%
+        left: 0
+        height: 100%
+        width: 100%
+        background: $secondary_color
+        transition: 0.3s ease-in-out all
+
+/*categoreis section*/
+.categories
+  position: relative
+  margin-top: 50px
+
+  .col-sm-6
+    text-align: center
+
+    .category
+      width: 70%
+      margin: 0 auto
+      border-radius: 10px
+      overflow: hidden
+      margin-bottom: 100px
+
+      .view
+        cursor: pointer
+
+      a
+        color: black
+
+      img
+        height: 350px

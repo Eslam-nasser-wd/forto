@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif; }
+
+body {
+  background: url("../img/pattern1.png"); }
+
+/*page title */
+.title {
+  text-align: center;
+  margin-top: 30px;
+  position: relative;
+  overflow-y: hidden;
+  padding: 5px 0; }
+  .title .full-word {
+    position: relative; }
+    .title .full-word:hover .first:before {
+      top: -100%; }
+    .title .full-word:hover .first {
+      color: #cf2626; }
+    .title .full-word:hover .second:before {
+      top: 100%; }
+    .title .full-word:hover .second {
+      color: #e5e5e5; }
+    .title .full-word .first {
+      position: relative;
+      transition: 0.3s ease-in-out all; }
+      .title .full-word .first:before {
+        position: absolute;
+        content: "";
+        top: 100%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #cf2626;
+        transition: 0.3s ease-in-out all; }
+    .title .full-word .second {
+      position: relative;
+      transition: 0.3s ease-in-out all; }
+      .title .full-word .second:before {
+        position: absolute;
+        content: "";
+        top: -100%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #e5e5e5;
+        transition: 0.3s ease-in-out all; }
+
+/*categoreis section */
+.categories {
+  position: relative;
+  margin-top: 50px; }
+  .categories .col-sm-6 {
+    text-align: center; }
+    .categories .col-sm-6 .category {
+      width: 70%;
+      margin: 0 auto;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 100px; }
+      .categories .col-sm-6 .category .view {
+        cursor: pointer; }
+      .categories .col-sm-6 .category a {
+        color: black; }
+      .categories .col-sm-6 .category img {
+        height: 350px; }
+
+/*# sourceMappingURL=style.css.map */
